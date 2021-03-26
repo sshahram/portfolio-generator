@@ -41,13 +41,7 @@ const promptUser = () => {
                 type: 'input',
                 name: 'about',
                 message: 'Provide some information about yourself:',
-                when: ({confirmAbout}) => {
-                    if(confirmAbout) {
-                        return true;
-                    } else {
-                        return false;
-                    }
-                }
+                when: ({confirmAbout}) => confirmAbout
             }
         ]);      
 };
@@ -137,38 +131,13 @@ promptUser()
     .then(promptProject)
     .then(portfolioData => {
         const pageHTML = generatePage(portfolioData);
+
         fs.writeFile('./index.html', pageHTML, err => {
             if(err) throw new Error(err);
+
             console.log('Portfolio complete! check out index.html to see the output!');
         });
     });
-
-// mock data to test the app
-// const mockData = {
-//     name: 'Shirin Shahram',
-//     gihub: 'sshahram',
-//     confirmAbout: true,
-//     about: 'I am an industrial engineer working on improvement projects. I am passionate about computer programming.',
-//     projects: [
-//       {
-//         name: 'Weather Dashboard',
-//         description: 'Users can search a city name and get information about its weather. They can also view a 5-day forecast.',
-//         languages: [Array],
-//         link: 'https://sshahram.github.io/weather-dashboard',
-//         feature: true,
-//         confirmAddProject: true
-//       },
-//       {
-//         name: 'password generator',
-//         description: 'it randomely generates a password based on the criteria provided by the user.',
-//         languages: [Array],
-//         link: 'https://sshahram.github.io/generate-password',
-//         feature: false,
-//         confirmAddProject: false
-//       }
-//     ]
-//   }
-// const pageHTML = generatePage(mockData);
 
 
  
