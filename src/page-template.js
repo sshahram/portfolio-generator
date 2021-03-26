@@ -56,6 +56,7 @@ const generateProjects = projectsArr => {
     `;
 };
 
+//export the html
 module.exports = templateData => {
     console.log(templateData);
     // destructure page data by section
