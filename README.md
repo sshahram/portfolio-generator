@@ -1,5 +1,7 @@
 # portfolio-generator
 
+## Description
+
 The main purpose of this project is to create a "portfolio generator" tool using Node.js. Here, a series of questions will be asked from users and their response will be collected and shown in the browser.
 
 ---
@@ -34,7 +36,7 @@ If the installation was successful, you should be able to run the following comm
 If you need to update `npm`, you can make it using `npm`! After running the following command, just open again the command line:
 
     $ npm install npm -g
-    
+
 
 ## Run the project
 
@@ -47,4 +49,4 @@ If you need to update `npm`, you can make it using `npm`! After running the foll
 ## Screenshots
 
 After answering the questions related to your portfolio, the finished web page should look like the following image:
-![portfolio]("./assets/images/portfolio-screen.jpg")
+![alt=portfolio]("./assets/images/portfolio-screen.jpg")
