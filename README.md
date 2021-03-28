@@ -49,4 +49,5 @@ If you need to update `npm`, you can make it using `npm`! After running the foll
 ## Screenshots
 
 After answering the questions related to your portfolio, the finished web page should look like the following image:
+
 ![alt=portfolio](./assets/images/portfolio-screen.jpg)
