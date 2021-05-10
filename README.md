@@ -2,7 +2,7 @@
 
 ## Description
 
-The main purpose of this project is to create a "portfolio generator" tool using Node.js. Here, a series of questions will be asked from users and their response will be collected and shown in the browser.
+The main purpose of this project is to create a "portfolio generator" tool using Node.js. Here, a series of questions will be asked from users and their responses will be collected and shown in the browser.
 
 ---
 ## Requirements
@@ -40,7 +40,7 @@ If you need to update `npm`, you can make it using `npm`! After running the foll
 
 ## Run the project
 
-    $ git clone https://github.com/YOUR_USERNAME/PROJECT_TITLE
+    $ git clone <git-repository-for-this-project>
     $ cd PROJECT_TITLE
     $ install npm packages
     $ run node app
